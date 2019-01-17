@@ -4,9 +4,6 @@
 let webview = document.querySelectorAll('webview')[0]
 
 webview.addEventListener('dom-ready', () => {
-    webview.executeJavaScript(`
-        alert(document.webkitFullscreenEnabled)
-    `)
     webview.addEventListener('enter-html-full-screen', (e)=>{
         console.log(e)
     })
